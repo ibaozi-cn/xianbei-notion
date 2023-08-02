@@ -44,15 +44,15 @@ export default function Editor() {
           from: selection.from - 2,
           to: selection.from,
         });
-        window.alert(
-          "Sorry, this feature is not available on production. Setup locally with your API to use AI writing."
-        );
-        // TODO: [1] Uncomment this to enable completion
-        // complete(
-        //   getPrevText(e.editor, {
-        //     chars: 5000,
-        //   })
+        // window.alert(
+        //   "Sorry, this feature is not available on production. Setup locally with your API to use AI writing."
         // );
+        // TODO: [1] Uncomment this to enable completion
+        complete(
+          getPrevText(e.editor, {
+            chars: 5000,
+          })
+        );
       } else {
         debouncedUpdates(e);
       }
