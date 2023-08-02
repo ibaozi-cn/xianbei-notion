@@ -9,16 +9,7 @@ import React from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 const Header = () => {
-  const [stars, setStars] = React.useState(0);
   const { theme: currentTheme, setTheme } = useTheme();
-
-  React.useEffect(() => {
-    fetch("https://api.github.com/repos/NiazMorshed2007/appwrite-writer")
-      .then((res) => res.json())
-      .then((res) => {
-        setStars(res.stargazers_count);
-      });
-  }, []);
   return (
     <header
       className={`${inter.className} w-full header backdrop-blur-sm z-50 py-5 fixed top-0 left-0 flex items-center justify-between px-[7%]`}
