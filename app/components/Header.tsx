@@ -26,17 +26,17 @@ const Header = () => {
     >
       <Logo />
       <nav className="flex items-center gap-7">
-        <Link
+        {/* <Link
           target="_blank"
           className="flex text-sm p-2 px-3 items-center gap-2 bg-gray-300 dark:bg-gray-800 rounded-full"
           href="https://github.com/NiazMorshed2007/appwrite-manager"
         >
           <Github className="w-5 h-5" />
           {stars} Stars
-        </Link>
-        <Link target="_blank" href="https://twitter.com/niazmorshed_">
+        </Link> */}
+        {/* <Link target="_blank" href="https://twitter.com/niazmorshed_">
           <Twitter className="w-5 h-5" />
-        </Link>
+        </Link> */}
         <button
           className="rounded-full w-[34px] flex items-center justify-center p-0 h-[34px]"
           onClick={() => setTheme(currentTheme === "light" ? "dark" : "light")}

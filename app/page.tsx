@@ -16,11 +16,7 @@ export default function Page() {
           <span className="text-[#f02e65]">Appwrite</span>
         </h1>
         <p className="text-gray-600 dark:text-gray-400">
-          Appwrite Writer is a powerful WYSIWYG editor that draws inspiration
-          from Notion. With its intuitive interface and seamless functionality,
-          create and edit documents, notes, and collaborative projects
-          effortlessly. Experience the future of document editing with Appwrite
-          Writer and unleash your creativity like never before.
+          xianbei notion 学习英语的好帮手
         </p>
         <div className="button-wrapper flex items-center mt-5 gap-3">
           <Link href="/login">

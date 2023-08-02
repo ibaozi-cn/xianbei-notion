@@ -7,7 +7,7 @@ const Logo = () => {
       <div className="flex items-center gap-3">
         <img src="/logo.svg" className="w-[30px] h-[30px]" alt="" />
         <h2 className="font-semibold select-none cursor-pointer">
-          Appwrite Writer
+          xianbei notion
         </h2>
       </div>
     </Link>

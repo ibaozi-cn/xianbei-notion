@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Appwrite Writer is a Notion-style WYSIWYG editor with AI-powered autocompletions powered by Appwrite and [Novel] (https://github.com/steven-tey/novel). It's goal is to give you an example of how powerful things you can build with Appwrite. Use this project to build your next cool project. And share love by sharing on social!
+xianbei notion 学习英语的好帮手。
 
 
 https://github.com/NiazMorshed2007/appwrite-writer/assets/77217706/f7fba7f5-d902-473f-9e0f-82e05c4e7797
@@ -20,7 +20,7 @@ https://github.com/NiazMorshed2007/appwrite-writer/assets/77217706/f7fba7f5-d902
 
 ## Tech Stack
 
-Appwrite Writer is built on the following stack:
+xianbei notion is built on the following stack:
 
 - [Appwrite](https://appwrite.io/) - backend 
 - [Next.js](https://nextjs.org/) – framework

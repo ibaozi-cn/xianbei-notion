@@ -8,9 +8,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 const title =
-  "Appwrite Writer – A Notion like WYSIWYG editor with AI-powered autocompletions powered with Appwrite";
+  "xianbei notion";
 const description =
-  "Appwrite Writer is a Notion-style WYSIWYG editor with AI-powered autocompletions. Built with  Novel, Appwrite OpenAI, & Vercel AI SDK.";
+  "xianbei notion 学习英语的好帮手。";
 
 export const metadata: Metadata = {
   title,
