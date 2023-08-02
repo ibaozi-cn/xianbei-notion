@@ -1,10 +1,9 @@
 "use client";
 
 import Logo from "@/ui/Logo";
-import { Github, MoonIcon, SunIcon, Twitter } from "lucide-react";
+import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,17 +25,6 @@ const Header = () => {
     >
       <Logo />
       <nav className="flex items-center gap-7">
-        {/* <Link
-          target="_blank"
-          className="flex text-sm p-2 px-3 items-center gap-2 bg-gray-300 dark:bg-gray-800 rounded-full"
-          href="https://github.com/NiazMorshed2007/appwrite-manager"
-        >
-          <Github className="w-5 h-5" />
-          {stars} Stars
-        </Link> */}
-        {/* <Link target="_blank" href="https://twitter.com/niazmorshed_">
-          <Twitter className="w-5 h-5" />
-        </Link> */}
         <button
           className="rounded-full w-[34px] flex items-center justify-center p-0 h-[34px]"
           onClick={() => setTheme(currentTheme === "light" ? "dark" : "light")}
