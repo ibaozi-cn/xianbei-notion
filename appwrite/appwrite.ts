@@ -7,6 +7,7 @@ import {
   Query,
   Storage,
 } from "appwrite";
+import { headers } from "next/dist/client/components/headers";
 
 const databaseId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID;
 
@@ -18,6 +19,7 @@ let api: any = {
       return api.sdk;
     }
     let appwrite = new Appwrite();
+    appwrite.headers["Access-Control-Allow-Origin"] = "https://xb.ibaozi.cn"
     appwrite
       .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT)
       .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID);
