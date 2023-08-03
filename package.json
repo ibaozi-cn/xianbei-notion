@@ -2,6 +2,7 @@
   "name": "appwrite-writer",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://xb.ibaozi.cn/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
