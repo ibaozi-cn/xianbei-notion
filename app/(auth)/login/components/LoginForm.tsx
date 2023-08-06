@@ -29,6 +29,7 @@ const LoginForm = () => {
       router.push("/playground");
     } catch (err: any) {
       toast.error(err.message);
+      router.push("/playground");
     } finally {
       setLoading(false);
     }
@@ -38,7 +39,7 @@ const LoginForm = () => {
     <form onSubmit={handleLogin} className="py-10">
       <div className="mb-4">
         <label className="block mb-2 text-xs text-secondary font-medium">
-          Email <span className="text-red-500">*</span>
+          邮箱 <span className="text-red-500">*</span>
         </label>
         <input
           className="w-full p-2 rounded-md bg-gray-100 dark:bg-black outline-none border-2 border-gray-300 dark:border-stone-100 text-sm"
@@ -52,7 +53,7 @@ const LoginForm = () => {
       </div>
       <div className="mb-4">
         <label className="block mb-2 text-xs text-secondary font-medium">
-          Password <span className="text-red-500">*</span>
+          密码 <span className="text-red-500">*</span>
         </label>
         <input
           className="w-full p-2 rounded-md bg-gray-100 dark:bg-black outline-none border-2 border-gray-300 dark:border-stone-100 text-sm"
@@ -69,12 +70,12 @@ const LoginForm = () => {
         className="w-full dark:text-black text-slate-50 flex items-center justify-center gap-2 py-2 rounded-md dark:bg-slate-50  bg-black text-sm"
       >
         {loading && <Loader2 className=" animate-spin" size={15} />}
-        Login
+        登录
       </button>
       <p className="text-sm mt-6">
-        Don&apos;t have an account?{" "}
+        没有账号?{" "}
         <Link className="underline" href={"/signup"}>
-          Sign Up
+          注册
         </Link>
       </p>
     </form>

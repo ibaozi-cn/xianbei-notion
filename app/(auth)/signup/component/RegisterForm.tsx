@@ -61,7 +61,7 @@ const RegisterForm = () => {
     >
       <div className="mb-4 w-full">
         <label className="block mb-2 text-xs text-secondary font-medium">
-          Full Name <span className="text-red-500">*</span>
+          昵称 <span className="text-red-500">*</span>
         </label>
         <input
           className="w-full p-2 rounded-md bg-gray-100 dark:bg-black outline-none border-2 border-gray-300 dark:border-stone-100 text-sm"
@@ -74,7 +74,7 @@ const RegisterForm = () => {
       </div>
       <div className="mb-4 w-full">
         <label className="block mb-2 text-xs text-secondary font-medium">
-          Email <span className="text-red-500">*</span>
+          邮箱 <span className="text-red-500">*</span>
         </label>
         <input
           className="w-full p-2 rounded-md bg-gray-100 dark:bg-black outline-none border-2 border-gray-300 dark:border-stone-100 text-sm"
@@ -88,7 +88,7 @@ const RegisterForm = () => {
       <div className="w-full flex items-center gap-4 ">
         <div className="mb-4 w-full">
           <label className="block mb-2 text-xs text-secondary font-medium">
-            Password <span className="text-red-500">*</span>
+            密码 <span className="text-red-500">*</span>
           </label>
           <input
             className="w-full p-2 rounded-md bg-gray-100 dark:bg-black outline-none border-2 border-gray-300 dark:border-stone-100 text-sm"
@@ -121,12 +121,12 @@ const RegisterForm = () => {
         className="w-full dark:text-black text-slate-50 flex items-center justify-center gap-2 py-2 rounded-md dark:bg-slate-50  bg-black text-sm"
       >
         {loading && <Loader2 className=" animate-spin" size={15} />}
-        Signup
+        注册
       </button>
       <p className="text-sm mt-3">
-        Alread have an account?{" "}
+        已经有了账号?{" "}
         <Link className="underline" href={"/login"}>
-          Login
+          登录
         </Link>
       </p>
     </form>
