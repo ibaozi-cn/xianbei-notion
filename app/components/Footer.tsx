@@ -11,12 +11,12 @@ const Footer = () => {
     >
       Created by{" "}
       <Link
-        href={"https://github.com/NiazMorshed2007"}
+        href={"https://github.com/ibaozi-cn"}
         className="underline"
         target="_blank"
       >
         {" "}
-        Niaz Morshed
+        i校长
       </Link>
       | Editor powered by{" "}
       <Link
