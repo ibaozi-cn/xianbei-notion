@@ -6,6 +6,7 @@ import { ReactNode } from "react";
 import Providers from "./providers";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Head from 'next/head';
 
 const title =
   "xianbei notion";
@@ -31,6 +32,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+      </Head>
       <body>
         <Providers>
           <Header />
